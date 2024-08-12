@@ -24,26 +24,26 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden lg:flex justify-between bg-[#fcd469] h-60 pl-48 pt-20">
-        <div className="text-white text-4xl font-bold">
+      <div className="hidden lg:flex justify-between bg-[#fcd469] h-60 px-8 lg:px-48 pt-8 lg:pt-20">
+        <div className="text-white text-3xl lg:text-4xl font-bold">
           WEB<span className="text-black">INTEGRATE</span>
         </div>
         <div>
-          <ul className="flex gap-2 text-[10px] font-semibold pr-20">
-            <li className="px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
+          <ul className="flex gap-1 lg:gap-2 text-[8px] lg:text-[10px] font-semibold pr-10 lg:pr-20">
+            <li className="px-3 lg:px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
               Tools
             </li>
-            <li className="px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
+            <li className="px-3 lg:px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
               Pricing
             </li>
-            <li className="px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
+            <li className="px-3 lg:px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
               Support
             </li>
-            <li className="px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
+            <li className="px-3 lg:px-5 py-1 hover:bg-gray-300 rounded-full duration-300">
               Login
             </li>
             <li
-              className="px-5 py-1 hover:bg-gray-300 rounded-full duration-300 cursor-pointer"
+              className="px-3 lg:px-5 py-1 hover:bg-gray-300 rounded-full duration-300 cursor-pointer"
               onClick={handleWeatherClick}
             >
               Weather
@@ -52,8 +52,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="lg:hidden flex justify-center items-center bg-[#fcd469] h-20">
-        <div className="text-white font-bold mt-8 text-5xl">
+      <div className="lg:hidden flex justify-center items-center bg-[#fcd469] h-16">
+        <div className="text-white font-bold text-3xl lg:text-5xl">
           WEB<span className="text-black">INTEGRATE</span>
         </div>
       </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } bg-gray-700 border-l border-gray-200`}
       >
-        <span className="pl-2 bg-gray-700 px-5 pt-4 font-bold text-blue-300 text-2xl">
+        <span className="pl-2 bg-gray-700 px-5 pt-4 font-bold text-blue-300 text-xl lg:text-2xl">
           WEB<span className="text-white">INTEGRATE</span>
         </span>
         <div className="h-full px-3 bg-gray-600 pb-4 overflow-y-auto">
@@ -134,13 +134,13 @@ const Navbar = () => {
       </aside>
 
       {showWeatherWidget && (
-        <div className="fixed top-24 right-0 m-4 p-4 bg-gray-100 rounded-sm shadow-lg z-50">
+        <div className="fixed top-16 lg:top-24 right-0 m-2 lg:m-4 p-4 bg-gray-100 rounded-sm shadow-lg z-50">
           <button
             onClick={handleCloseWeatherWidget}
             className="absolute top-2 right-2 p-1 text-gray-500 rounded-full hover:bg-gray-200"
           >
             <svg
-              className="w-6 h-6 pr-2"
+              className="w-5 h-5 lg:w-6 lg:h-6 pr-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

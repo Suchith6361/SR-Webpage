@@ -41,7 +41,7 @@ const Slider = () => {
   };
 
   return (
-    <section className=" mt-[-200px]  mb-[30px]">
+    <section className=" mt-[-200px]   mb-[30px]">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -62,8 +62,8 @@ const Slider = () => {
             style={{ zIndex: 100 }}
             key={index}
           >
-            <div className="h-[200px] bg-none"></div>
-            <div className="flex h-[200px] pb-20 max-md:flex-col-reverse max-md:h-full  relative items-center justify-center bg-gradient-to-r from-yellow-50 to-[#fcd469]">
+            <div className="h-[200px]   bg-none"></div>
+            <div className="flex h-[200px] xsm:h-[400px] pb-20 max-md:flex-col-reverse max-md:h-full  relative items-center justify-center bg-gradient-to-r from-yellow-50 to-[#fcd469]">
               <div className="flex flex-col items-start justify-end w-[300px]  ">
                 <span className="text-[13px]">{slide.content}</span>
                 <div className="flex justify-between items-center ">
@@ -80,7 +80,7 @@ const Slider = () => {
               </div>
               <img
                 src={slide.image}
-                className="w-[300px] mt-[-100px] "
+                className="lg:w-[500px] xsm:w-[250px] mt-[-100px] "
                 alt="Slide Image"
               />
             </div>
