@@ -1,7 +1,7 @@
 import chairImage from "../images/chair.png";
 import bookImage from "../images/bibel-2615221_1280.png";
 import cycleImage from "../images/png-2757379_1280.png";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import avatar from "../images/pexels-pixabay-415829.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="hidden lg:flex justify-between bg-[#fcd469] h-60 px-8 lg:px-48 pt-8 lg:pt-20">
         <div className="text-white text-3xl lg:text-4xl font-bold">
           WEB<span className="text-black">INTEGRATE</span>
@@ -157,7 +157,7 @@ const Navbar = () => {
           <WeatherWidget />
         </div>
       )}
-    </>
+   </div>
   );
 };
 
